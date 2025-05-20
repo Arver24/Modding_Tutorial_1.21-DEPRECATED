@@ -2,11 +2,11 @@ package com.arver.mod_tutorial.block;
 
 
 import com.arver.mod_tutorial.TutorialMod;
+
 import com.arver.mod_tutorial.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,12 +15,15 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-public class ModBlocks {
+public class ModBlocks{
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MOD_ID); //creating a register for all blocks in the mod
 
     public static final RegistryObject<Block> PALADINITE_BLOCK=registerBlock("paladinite_block", ()->new Block(
             BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+    public static final RegistryObject<Block> PALADINITE_DUST_BLOCK=registerBlock("paladinite_dust_block", ()->new ColoredFallingBlock(null,
+            BlockBehaviour.Properties.of().strength(1f).sound(SoundType.SAND)));
+
 
 
     //method to add the block to blocks registry

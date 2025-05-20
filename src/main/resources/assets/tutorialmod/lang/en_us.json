@@ -1,6 +1,7 @@
 {
   "item.tutorialmod.paladinite_shard": "Paladinite Shard",
   "item.tutorialmod.paladinite_dust": "Paladinite Dust",
-  "block.tutorialmod.paladinite_block": "Paladinite Block"
+  "block.tutorialmod.paladinite_block": "Paladinite Block",
+  "block.tutorialmod.paladinite_dust_block": "Paladinite Dust Block"
 
 }

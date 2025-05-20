@@ -57,6 +57,7 @@ public class TutorialMod {
         }
         if(event.getTabKey()== CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.PALADINITE_BLOCK);
+            event.accept(ModBlocks.PALADINITE_DUST_BLOCK);
 
         }
     }
