@@ -11,9 +11,9 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS=
             DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID); // creating a register for all items in the mod
 
-    public static final RegistryObject<Item> PALADINITE=ITEMS.register("paladinite",
+    public static final RegistryObject<Item> PALADINITE_SHARD=ITEMS.register("paladinite_shard",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PALADINITE_CRYSTAL =ITEMS.register("paladinite_crystal",
+    public static final RegistryObject<Item> PALADINITE_DUST =ITEMS.register("paladinite_dust",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

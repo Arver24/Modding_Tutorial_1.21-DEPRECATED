@@ -1,4 +1,6 @@
 {
-  "item.tutorialmod.paladinite": "Paladinite Ingot",
-  "item.tutorialmod.paladinite_crystal": "Paladinite Crystal"
+  "item.tutorialmod.paladinite_shard": "Paladinite Shard",
+  "item.tutorialmod.paladinite_dust": "Paladinite Dust",
+  "block.tutorialmod.paladinite_block": "Paladinite Block"
+
 }

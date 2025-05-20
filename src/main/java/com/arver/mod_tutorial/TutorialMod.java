@@ -1,5 +1,6 @@
 package com.arver.mod_tutorial;
 
+import com.arver.mod_tutorial.block.ModBlocks;
 import com.arver.mod_tutorial.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -34,6 +35,7 @@ public class TutorialMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -49,8 +51,13 @@ public class TutorialMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey()== CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.PALADINITE);
-            event.accept(ModItems.PALADINITE_CRYSTAL);
+            event.accept(ModItems.PALADINITE_SHARD);
+            event.accept(ModItems.PALADINITE_DUST);
+
+        }
+        if(event.getTabKey()== CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.PALADINITE_BLOCK);
+
         }
     }
 
