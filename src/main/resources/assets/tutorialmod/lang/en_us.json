@@ -2,6 +2,9 @@
   "item.tutorialmod.paladinite_shard": "Paladinite Shard",
   "item.tutorialmod.paladinite_dust": "Paladinite Dust",
   "block.tutorialmod.paladinite_block": "Paladinite Block",
-  "block.tutorialmod.paladinite_dust_block": "Paladinite Dust Block"
+  "block.tutorialmod.paladinite_dust_block": "Paladinite Dust Block",
+
+  "creativetab.tutorialmod.paladinite_items": "Paladinite Items",
+  "creativetab.tutorialmod.paladinite_blocks": "Paladinite Blocks"
 
 }

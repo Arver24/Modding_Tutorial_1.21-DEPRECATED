@@ -1,6 +1,7 @@
 package com.arver.mod_tutorial;
 
 import com.arver.mod_tutorial.block.ModBlocks;
+import com.arver.mod_tutorial.item.ModCreativeTab;
 import com.arver.mod_tutorial.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -34,6 +35,8 @@ public class TutorialMod {
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeTab.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
