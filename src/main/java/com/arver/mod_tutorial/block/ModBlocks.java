@@ -28,12 +28,14 @@ public class ModBlocks{
             BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
     public static final RegistryObject<Block> PALADINITE_DUST_BLOCK=registerBlock("paladinite_dust_block", ()->new ColoredFallingBlock(defaultFallingBlockColor,
             BlockBehaviour.Properties.of().strength(1f).sound(SoundType.SAND)));
-    public static final RegistryObject<Block> PALADINITE_ORE=registerBlock("paladinite_dust_block",
+
+    public static final RegistryObject<Block> PALADINITE_ORE=registerBlock("paladinite_ore",
             ()->new DropExperienceBlock(UniformInt.of(4,7),BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
 
-    public static final RegistryObject<Block> DEEPSLATE_PALADINITE_ORE=registerBlock("paladinite_dust_block",
-            ()->new DropExperienceBlock(UniformInt.of(8,12),BlockBehaviour.Properties.of().strength(6f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DEEPSLATE_PALADINITE_ORE=registerBlock("deepslate_paladinite_ore",
+            ()->new DropExperienceBlock(UniformInt.of(8,12),
+                    BlockBehaviour.Properties.of().strength(6f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
 
 

@@ -27,7 +27,10 @@ public class ModCreativeTab {
                     "creativetab.tutorialmod.paladinite_blocks")).displayItems((itemDisplayParameters,output)->{
                         output.accept(ModBlocks.PALADINITE_BLOCK.get());
                         output.accept(ModBlocks.PALADINITE_DUST_BLOCK.get());
+                        output.accept(ModBlocks.PALADINITE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_PALADINITE_ORE.get());
             }).build());
+
 
 
 

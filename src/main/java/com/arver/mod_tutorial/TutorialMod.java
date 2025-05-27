@@ -63,6 +63,11 @@ public class TutorialMod {
             event.accept(ModBlocks.PALADINITE_DUST_BLOCK);
 
         }
+        if(event.getTabKey()== CreativeModeTabs.NATURAL_BLOCKS){
+            event.accept(ModBlocks.PALADINITE_ORE);
+            event.accept(ModBlocks.DEEPSLATE_PALADINITE_ORE);
+
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

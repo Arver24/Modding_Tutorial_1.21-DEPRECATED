@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:paladinite_block",
+    "tutorialmod:paladinite_ore",
+    "tutorialmod:deepslate_paladinite_ore"
+  ]
+}
